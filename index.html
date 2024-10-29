@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Screen | By RY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h3>Login to your Account</h3>
+        <form id="loginForm" method="post" onsubmit="return validateForm()" autocomplete="off">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <label for="rememberMe">Remember Me</label>
+            </div>
+            <button type="submit">Login</button>
+            <div class="social-login">
+                <p>Or continue with:</p>
+                <button type="button" class="google-button">Sign in with Google</button>
+                <button type="button" class="facebook-button">Sign in with Facebook</button>
+            </div>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
